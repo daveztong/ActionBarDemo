@@ -1,0 +1,49 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@style/Theme.Sherlock.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- the theme applied to the application or activity -->
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/Appcompat.WayeActionBar</item>
+        <item name="actionBarTabTextStyle">@style/Appcompat.TabTextStyle</item>
+        <item name="actionMenuTextColor">#fff</item>
+        <item name="actionBarTabStyle">@style/Appcompat.WayeActionBarTabStyle</item>
+    </style>
+
+    <!-- general styles for the action bar -->
+    <style name="Appcompat.WayeActionBar" parent="@style/Widget.Sherlock.ActionBar">
+
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/Appcompat.TitleTextStyle</item>
+        <item name="background">@color/strong_red</item>
+        <item name="backgroundStacked">@color/strong_red</item>
+        <item name="backgroundSplit">@color/strong_red</item>
+    </style>
+
+    <!-- action bar title text -->
+    <style name="Appcompat.TitleTextStyle" parent="@style/TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- action bar tab text -->
+    <style name="Appcompat.TabTextStyle" parent="@style/Widget.Sherlock.Light.ActionBar.TabText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+    <style name="Appcompat.WayeActionBarTabStyle" parent="@style/Widget.Sherlock.ActionBar.TabView">
+        <item name="android:background">@drawable/actionbar_tab_indicator</item>
+    </style>
+
+</resources>
