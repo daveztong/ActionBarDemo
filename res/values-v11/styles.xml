@@ -1,0 +1,37 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="@style/Theme.Sherlock.Light">
+    </style>
+
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:actionBarStyle">@style/WayeActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/TabTextStyle</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="android:actionBarTabStyle">@style/WayeActionBarTabStyle</item>
+    </style>
+
+    <style name="WayeActionBar" parent="@style/Widget.Sherlock.ActionBar">
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+        <item name="android:background">@color/strong_red</item>
+        <item name="android:backgroundStacked">@color/strong_red</item>
+        <item name="android:backgroundSplit">@color/strong_red</item>
+    </style>
+
+    <style name="TitleTextStyle" parent="@style/TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TabTextStyle" parent="@style/Widget.Sherlock.Light.ActionBar.TabText">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
+    <style name="WayeActionBarTabStyle" parent="@style/Widget.Sherlock.ActionBar.TabView">
+        <item name="android:background">@drawable/actionbar_tab_indicator</item>
+    </style>
+
+</resources>
